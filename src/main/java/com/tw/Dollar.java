@@ -1,8 +1,5 @@
 package com.tw;
 
-/**
- * Created by yxwang on 29/06/2017.
- */
 public class Dollar {
     private int amount;
 
@@ -10,8 +7,12 @@ public class Dollar {
         this.amount = amount;
     }
 
+    public Dollar multiply(int multiplier) {
+        return new Dollar(amount * multiplier);
+    }
+
     @Override
     public boolean equals(Object obj) {
-        return this.amount == ((Dollar)obj).amount;
+        return this.amount == ((Dollar) obj).amount;
     }
 }
