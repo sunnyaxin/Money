@@ -16,8 +16,8 @@ public class DollarTest {
     }
 
     @Test
-    public void test_one_dollar_multiply_two() throws Exception {
-        assertEquals(new Dollar(2), new Dollar(1).multiply(2));
+    public void test_one_dollar_times_two() throws Exception {
+        assertEquals(new Dollar(2), new Dollar(1).times(2));
     }
 
     @Test
@@ -25,5 +25,26 @@ public class DollarTest {
         Dollar oneDollar = new Dollar(1);
         Dollar anotherOneDollar = new Dollar(1);
         assertEquals(new Dollar(2), oneDollar.plus(anotherOneDollar));
+    }
+
+    @Test
+    public void test_multiple_addition_times() throws Exception {
+        Dollar oneDollar = new Dollar(1);
+        Dollar twoDollar = new Dollar(2);
+        assertEquals(new Dollar(6), oneDollar.plus(twoDollar).times(2));
+    }
+
+    @Test
+    public void test_multiple_addition() throws Exception {
+        Dollar oneDollar = new Dollar(1);
+        Dollar twoDollar = new Dollar(2);
+        Dollar threeDollar = new Dollar(3);
+        assertEquals(new Dollar(6), oneDollar.plus(twoDollar).plus(threeDollar));
+    }
+
+    @Test
+    public void test_multiple_times() throws Exception {
+        Dollar oneDollar = new Dollar(1);
+        assertEquals(new Dollar(6), oneDollar.times(2).times(3));
     }
 }
