@@ -1,4 +1,5 @@
 import com.tw.Dollar;
+import com.tw.Franc;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -47,4 +48,15 @@ public class DollarTest {
         Dollar oneDollar = new Dollar(1);
         assertEquals(new Dollar(6), oneDollar.times(2).times(3));
     }
+
+    @Test
+    public void test_dollar_currency_type() throws Exception {
+        assertEquals("USD", new Dollar(1).getCurrency());
+    }
+
+    @Test
+    public void test_franc_currency_type() throws Exception {
+        assertEquals("CHF", new Franc(1).getCurrency());
+    }
+
 }
