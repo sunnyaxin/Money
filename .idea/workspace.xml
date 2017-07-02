@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1193c2-df06-4667-a7ac-614635f0cb3b" name="Default" comment="Add multiple addition,">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Money/com/tw/Dollar.class" afterPath="$PROJECT_DIR$/out/production/Money/com/tw/Dollar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Money/DollarTest.class" afterPath="$PROJECT_DIR$/out/test/Money/DollarTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Money/HelloWorldTest.class" afterPath="$PROJECT_DIR$/out/test/Money/HelloWorldTest.class" />
+    <list default="true" id="de1193c2-df06-4667-a7ac-614635f0cb3b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tw/Franc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/FrancTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tw/Dollar.java" afterPath="$PROJECT_DIR$/src/main/java/com/tw/Dollar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/DollarTest.java" afterPath="$PROJECT_DIR$/src/test/java/DollarTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DollarTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DollarTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DollarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
+            <state relative-caret-position="831">
               <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,11 +41,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FrancTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FrancTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Franc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Franc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="29" column="51" lean-forward="false" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+              <folding>
+                <element signature="e#84#85#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Dollar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Dollar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="82">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="e#94#95#0" expanded="true" />
                 <element signature="e#130#131#0" expanded="true" />
@@ -101,6 +129,8 @@
         <option value="$PROJECT_DIR$/src/test/java/HelloWorldTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Dollar.java" />
         <option value="$PROJECT_DIR$/src/test/java/DollarTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tw/Franc.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FrancTest.java" />
       </list>
     </option>
   </component>
@@ -217,35 +247,14 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.All in Money">
-    <configuration default="false" name="All in Money" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FrancTest.test_one_franc_plus_one_franc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Money" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="DollarTest.test_one_dollar_plus_one_dollar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Money" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DollarTest" />
-      <option name="METHOD_NAME" value="test_one_dollar_plus_one_dollar" />
+      <option name="MAIN_CLASS_NAME" value="FrancTest" />
+      <option name="METHOD_NAME" value="test_one_franc_plus_one_franc" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -259,13 +268,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DollarTest.test_multiple_addition_times" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FrancTest.test_multiple_addition_times" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Money" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DollarTest" />
+      <option name="MAIN_CLASS_NAME" value="FrancTest" />
       <option name="METHOD_NAME" value="test_multiple_addition_times" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -280,13 +289,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DollarTest.test_multiple_addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FrancTest.test_multiple_addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Money" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DollarTest" />
+      <option name="MAIN_CLASS_NAME" value="FrancTest" />
       <option name="METHOD_NAME" value="test_multiple_addition" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -301,15 +310,36 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DollarTest.test_multiple_times" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FrancTest.test_multiple_times" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Money" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DollarTest" />
+      <option name="MAIN_CLASS_NAME" value="FrancTest" />
       <option name="METHOD_NAME" value="test_multiple_times" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in Money" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Money" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -527,19 +557,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in Money" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DollarTest.test_one_dollar_plus_one_dollar" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DollarTest.test_multiple_addition_times" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DollarTest.test_multiple_addition" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DollarTest.test_multiple_times" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FrancTest.test_one_franc_plus_one_franc" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FrancTest.test_multiple_addition_times" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FrancTest.test_multiple_addition" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FrancTest.test_multiple_times" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Money" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in Money" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DollarTest.test_multiple_times" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DollarTest.test_multiple_addition" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DollarTest.test_multiple_addition_times" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DollarTest.test_one_dollar_plus_one_dollar" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FrancTest.test_multiple_times" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FrancTest.test_multiple_addition" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FrancTest.test_multiple_addition_times" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FrancTest.test_one_franc_plus_one_franc" />
       </list>
     </recent_temporary>
   </component>
@@ -564,39 +594,46 @@
       <option name="project" value="LOCAL" />
       <updated>1498990348653</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add multiple addition, multiple times, modify times name.">
+      <created>1498991020379</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1498991020379</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Money - 2017.07.02 at 18h 10m 26s.xml">
+    <history-entry file="All_in_Money - 2017.07.02 at 18h 51m 03s.xml">
       <configuration name="All in Money" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Money - 2017.07.02 at 18h 19m 44s.xml">
-      <configuration name="All in Money" configurationId="JUnit" />
+    <history-entry file="FrancTest - 2017.07.02 at 18h 37m 44s.xml">
+      <configuration name="FrancTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Money - 2017.07.02 at 18h 22m 50s.xml">
-      <configuration name="All in Money" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_multiple_addition - 2017.07.02 at 18h 49m 45s.xml">
+      <configuration name="FrancTest.test_multiple_addition" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_addition - 2017.07.02 at 18h 18m 29s.xml">
-      <configuration name="DollarTest.test_multiple_addition" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_multiple_addition_times - 2017.07.02 at 18h 47m 16s.xml">
+      <configuration name="FrancTest.test_multiple_addition_times" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_addition - 2017.07.02 at 18h 19m 11s.xml">
-      <configuration name="DollarTest.test_multiple_addition" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_multiple_times - 2017.07.02 at 18h 50m 38s.xml">
+      <configuration name="FrancTest.test_multiple_times" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_addition_multiply - 2017.07.02 at 18h 15m 09s.xml">
-      <configuration name="DollarTest.test_multiple_addition_multiply" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_multiple_times - 2017.07.02 at 18h 50m 51s.xml">
+      <configuration name="FrancTest.test_multiple_times" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_addition_multiply - 2017.07.02 at 18h 15m 33s.xml">
-      <configuration name="DollarTest.test_multiple_addition_multiply" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_one_franc_not_equals_one_franc - 2017.07.02 at 18h 33m 57s.xml">
+      <configuration name="FrancTest.test_one_franc_not_equals_one_franc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_addition_multiply - 2017.07.02 at 18h 16m 22s.xml">
-      <configuration name="DollarTest.test_multiple_addition_multiply" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_one_franc_plus_one_franc - 2017.07.02 at 18h 45m 09s.xml">
+      <configuration name="FrancTest.test_one_franc_plus_one_franc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_addition_multiply - 2017.07.02 at 18h 17m 09s.xml">
-      <configuration name="DollarTest.test_multiple_addition_multiply" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_one_franc_times_two - 2017.07.02 at 18h 37m 48s.xml">
+      <configuration name="FrancTest.test_one_franc_times_two" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_multiple_times - 2017.07.02 at 18h 22m 01s.xml">
-      <configuration name="DollarTest.test_multiple_times" configurationId="JUnit" />
+    <history-entry file="FrancTest_test_one_franc_times_two - 2017.07.02 at 18h 41m 55s.xml">
+      <configuration name="FrancTest.test_one_franc_times_two" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -663,7 +700,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add one dollar plus one dollar, modify equals(), hashcode()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add one dollar plus one dollar, modify equals(), hashcode()." />
+    <MESSAGE value="Add multiple addition, multiple times, modify times name." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add multiple addition, multiple times, modify times name." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -721,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Dollar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="82">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="e#94#95#0" expanded="true" />
             <element signature="e#130#131#0" expanded="true" />
@@ -738,8 +776,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DollarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
+        <state relative-caret-position="831">
           <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Franc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="29" column="51" lean-forward="false" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding>
+            <element signature="e#84#85#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FrancTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
