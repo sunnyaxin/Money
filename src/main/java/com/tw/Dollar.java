@@ -1,10 +1,9 @@
 package com.tw;
 
-public class Dollar {
-    private int amount;
+public class Dollar extends Money{
 
     public Dollar(int amount) {
-        this.amount = amount;
+        super(amount);
     }
 
     public Dollar times(int multiplier) {
@@ -25,8 +24,4 @@ public class Dollar {
         return amount == dollar.amount;
     }
 
-    @Override
-    public int hashCode() {
-        return amount;
-    }
 }

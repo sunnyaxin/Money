@@ -1,10 +1,9 @@
 package com.tw;
 
-public class Franc {
-    int amount;
+public class Franc extends Money {
 
     public Franc(int amount) {
-        this.amount = amount;
+        super(amount);
     }
 
     @Override
@@ -17,13 +16,8 @@ public class Franc {
         return amount == franc.amount;
     }
 
-    @Override
-    public int hashCode() {
-        return amount;
-    }
-
-    public Franc times(int multipler) {
-        return new Franc(this.amount * multipler);
+    public Franc times(int multiplier) {
+        return new Franc(this.amount * multiplier);
     }
 
     public Franc plus(Franc franc) {
