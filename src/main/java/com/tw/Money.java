@@ -21,24 +21,15 @@ public class Money {
         return new Money(this.amount + addend.amount, this.getCurrency());
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//
-//        Money money = (Money) o;
-//
-//        if (amount != money.amount) return false;
-//        return currency != null ? currency.equals(money.currency) : money.currency == null;
-//    }
-
     @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Money) {
-            Money money = (Money) obj;
-            return this.amount == money.amount && money.currency.equals(this.currency);
-        }
-        return false;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+
+        Money money = (Money) o;
+
+        if (amount != money.amount) return false;
+        return currency != null ? currency.equals(money.currency) : money.currency == null;
     }
 
     @Override
