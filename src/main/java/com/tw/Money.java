@@ -1,12 +1,20 @@
 package com.tw;
 
 public class Money {
-    int amount;
+    private int amount;
     private String currency;
 
-    Money(int amount, String currency) {
+    private Money(int amount, String currency) {
         this.amount = amount;
         this.currency = currency;
+    }
+
+    public static Money dollar(int amount) {
+        return new Money(amount, "USD");
+    }
+
+    public static Money franc(int amount) {
+        return new Money(amount, "CHF");
     }
 
     public String getCurrency() {
@@ -24,12 +32,11 @@ public class Money {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) return false;
 
         Money money = (Money) o;
 
-        if (amount != money.amount) return false;
-        return currency != null ? currency.equals(money.currency) : money.currency == null;
+        return amount == money.amount && (currency != null ? currency.equals(money.currency) : money.currency == null);
     }
 
     @Override
