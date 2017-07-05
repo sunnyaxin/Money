@@ -87,4 +87,16 @@ public class DollarTest {
         Sum sum = new Sum(Money.dollar(1), Money.franc(2));
         assertEquals(Money.franc(8), bank.reduce(sum.plus(sum), "CHF"));
     }
+
+    @Test
+    public void test_sum_times_three() throws Exception {
+        Sum sum = new Sum(Money.dollar(1), Money.franc(2));
+        assertEquals(Money.franc(12), bank.reduce(sum.times(3), "CHF"));
+    }
+
+    @Test
+    public void final_test() throws Exception {
+        Expression source = Money.dollar(1).plus(Money.dollar(2)).times(3).plus(Money.franc(4)).times(5);
+        assertEquals(Money.franc(110), bank.reduce(source, "CHF"));
+    }
 }
