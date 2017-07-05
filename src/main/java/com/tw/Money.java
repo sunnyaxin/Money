@@ -21,18 +21,26 @@ public class Money implements Expression {
         return currency;
     }
 
-    Money times(int multiplier) {
-        return new Money(amount * multiplier, this.getCurrency());
-    }
-
-    Money plus(Money addend) {
-        return new Money(this.amount + addend.amount, this.getCurrency());
-    }
-
     @Override
     public Money reduce(String toCurrency, Bank bank) {
         int rate = bank.rate(getCurrency(), toCurrency);
         return new Money(amount * rate, toCurrency);
+    }
+
+    @Override
+    public Money times(int multiplier) {
+        return new Money(amount * multiplier, this.getCurrency());
+    }
+
+    @Override
+    public Expression plus(Expression expression) {
+        if(expression instanceof Money){
+            Money addend = (Money)expression;
+            if(this.getCurrency().equals(addend.getCurrency())){
+                return new Money(this.amount + addend.amount, this.getCurrency());
+            }
+        }
+        return new Sum(this, expression);
     }
 
     @Override
@@ -47,8 +55,6 @@ public class Money implements Expression {
 
     @Override
     public int hashCode() {
-        int result = amount;
-        result = 31 * result + (currency != null ? currency.hashCode() : 0);
-        return result;
+        return amount;
     }
 }
