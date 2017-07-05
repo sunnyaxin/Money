@@ -12,9 +12,8 @@ class Bank {
     }
 
     int rate(String fromCurrency, String toCurrency) {
-        rate = 1;
-        if (fromCurrency.equals("USD") && toCurrency.equals("CHF")) {
-            rate = 2;
+        if (fromCurrency.equals(toCurrency)) {
+            return 1; //这里要return1，不可以rate=1，否则重置rate，会产生错误
         }
         return rate;
     }

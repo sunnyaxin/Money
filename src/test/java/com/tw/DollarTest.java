@@ -1,12 +1,19 @@
 package com.tw;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 public class DollarTest {
-    private final Bank bank = new Bank();
+    private  Bank bank;
+
+    @Before
+    public void setUp() throws Exception {
+        bank = new Bank();
+        bank.setRate("USD", "CHF", 2);
+    }
 
     @Test
     public void test_one_dollar_equals_one_dollar() throws Exception {
