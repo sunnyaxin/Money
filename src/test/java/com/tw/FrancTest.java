@@ -1,4 +1,5 @@
-import com.tw.Money;
+package com.tw;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

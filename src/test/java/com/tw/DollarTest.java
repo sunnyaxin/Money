@@ -1,5 +1,5 @@
-import com.tw.Bank;
-import com.tw.Money;
+package com.tw;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -62,7 +62,13 @@ public class DollarTest {
     }
 
     @Test
-    public void test_one_dollar_reduce_one_dollar() throws Exception {
+    public void test_reduce_same_currency() throws Exception {
         assertEquals(Money.dollar(1), bank.reduce(Money.dollar(1), "USD"));
+        assertEquals(Money.franc(1), bank.reduce(Money.franc(1), "CHF"));
+    }
+
+    @Test
+    public void test_reduce_one_dollar_is_two_franc() throws Exception {
+        assertEquals(Money.franc(2), bank.reduce(Money.dollar(1), "CHF"));
     }
 }

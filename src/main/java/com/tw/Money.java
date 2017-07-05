@@ -1,7 +1,7 @@
 package com.tw;
 
 public class Money {
-    private int amount;
+    int amount;
     private String currency;
 
     private Money(int amount, String currency) {
@@ -9,23 +9,23 @@ public class Money {
         this.currency = currency;
     }
 
-    public static Money dollar(int amount) {
+    static Money dollar(int amount) {
         return new Money(amount, "USD");
     }
 
-    public static Money franc(int amount) {
+    static Money franc(int amount) {
         return new Money(amount, "CHF");
     }
 
-    public String getCurrency() {
+    String getCurrency() {
         return currency;
     }
 
-    public Money times(int multiplier) {
+    Money times(int multiplier) {
         return new Money(amount * multiplier, this.getCurrency());
     }
 
-    public Money plus(Money addend) {
+    Money plus(Money addend) {
         return new Money(this.amount + addend.amount, this.getCurrency());
     }
 

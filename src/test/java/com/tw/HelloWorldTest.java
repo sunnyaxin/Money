@@ -1,4 +1,5 @@
-import com.tw.HelloWorld;
+package com.tw;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

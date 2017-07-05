@@ -1,10 +1,10 @@
 package com.tw;
 
-public class HelloWorld {
-    public HelloWorld() {
+class HelloWorld {
+    HelloWorld() {
     }
 
-    public String hi() {
+    String hi() {
         return "Hello, world";
     }
 }
