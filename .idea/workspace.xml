@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0758230b-0443-45bb-a9fd-b72ba13842ea" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/tw/BankTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" afterPath="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,12 +17,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DollarTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DollarTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="87" column="45" lean-forward="true" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+            <state relative-caret-position="577">
+              <caret line="99" column="57" lean-forward="true" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/BankTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,14 +75,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="425">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
-                <element signature="e#105#106#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
+                <element signature="e#129#130#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,6 +137,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,10 +154,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/tw/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Expression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Sum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Money.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tw/BankTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" />
       </list>
     </option>
   </component>
@@ -312,84 +327,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DollarTest.test_reduce_one_dollar_is_two_franc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.DollarTest" />
-      <option name="METHOD_NAME" value="test_reduce_one_dollar_is_two_franc" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="DollarTest.test_reduce_same_currency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.DollarTest" />
-      <option name="METHOD_NAME" value="test_reduce_same_currency" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="DollarTest.test_sum_plus_sum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tw" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.DollarTest" />
-      <option name="METHOD_NAME" value="test_sum_plus_sum" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="DollarTest.test_sum_times_three" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -403,6 +340,84 @@
       <option name="PACKAGE_NAME" value="com.tw" />
       <option name="MAIN_CLASS_NAME" value="com.tw.DollarTest" />
       <option name="METHOD_NAME" value="test_sum_times_three" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankTest.test_rate_dollar_to_dollar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.BankTest" />
+      <option name="METHOD_NAME" value="test_rate_dollar_to_dollar" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankTest.test_rate_franc_to_franc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.BankTest" />
+      <option name="METHOD_NAME" value="test_rate_franc_to_franc" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankTest.test_rate_dollar_to_franc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tw" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.BankTest" />
+      <option name="METHOD_NAME" value="test_rate_dollar_to_franc" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -622,18 +637,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DollarTest.test_reduce_one_dollar_is_two_franc" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DollarTest.test_reduce_same_currency" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DollarTest.test_sum_plus_sum" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DollarTest.test_sum_times_three" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DollarTest.test_sum_times_three" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankTest.test_rate_dollar_to_dollar" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankTest.test_rate_franc_to_franc" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BankTest.test_rate_dollar_to_franc" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DollarTest.test_sum_times_three" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DollarTest.test_sum_plus_sum" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DollarTest.test_reduce_same_currency" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DollarTest.test_reduce_one_dollar_is_two_franc" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BankTest.test_rate_dollar_to_franc" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankTest.test_rate_franc_to_franc" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankTest.test_rate_dollar_to_dollar" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DollarTest.test_sum_times_three" />
       </list>
     </recent_temporary>
   </component>
@@ -669,39 +684,46 @@
       <option name="project" value="LOCAL" />
       <updated>1499261425033</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add final test[((1d+2d)*3+4d)*5=110f].">
+      <created>1499261845138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1499261845138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_test - 2017.07.05 at 21h 28m 51s.xml">
-      <configuration name="All in test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_test - 2017.07.05 at 21h 32m 32s.xml">
-      <configuration name="All in test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_test - 2017.07.05 at 21h 33m 07s.xml">
-      <configuration name="All in test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_test - 2017.07.05 at 21h 34m 25s.xml">
-      <configuration name="All in test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_test - 2017.07.05 at 21h 35m 07s.xml">
-      <configuration name="All in test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_test - 2017.07.05 at 21h 35m 11s.xml">
       <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_test - 2017.07.05 at 21h 36m 16s.xml">
       <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_sum_plus_sum - 2017.07.05 at 21h 28m 42s.xml">
-      <configuration name="DollarTest.test_sum_plus_sum" configurationId="JUnit" />
+    <history-entry file="All_in_test - 2017.07.05 at 21h 41m 26s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_sum_times_three - 2017.07.05 at 21h 32m 04s.xml">
-      <configuration name="DollarTest.test_sum_times_three" configurationId="JUnit" />
+    <history-entry file="All_in_test - 2017.07.05 at 21h 44m 51s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_sum_times_three - 2017.07.05 at 21h 32m 21s.xml">
-      <configuration name="DollarTest.test_sum_times_three" configurationId="JUnit" />
+    <history-entry file="All_in_test - 2017.07.05 at 21h 49m 49s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_test - 2017.07.05 at 21h 50m 43s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_test_rate_dollar_to_dollar - 2017.07.05 at 21h 42m 25s.xml">
+      <configuration name="BankTest.test_rate_dollar_to_dollar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_test_rate_dollar_to_dollar - 2017.07.05 at 21h 42m 53s.xml">
+      <configuration name="BankTest.test_rate_dollar_to_dollar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_test_rate_dollar_to_franc - 2017.07.05 at 21h 44m 47s.xml">
+      <configuration name="BankTest.test_rate_dollar_to_franc" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_test_rate_franc_to_franc - 2017.07.05 at 21h 43m 32s.xml">
+      <configuration name="BankTest.test_rate_franc_to_franc" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -717,8 +739,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496799" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -771,7 +793,8 @@
     <MESSAGE value="Add reduce same currency and different currency, modify some warning." />
     <MESSAGE value="Add one dollar plus two francs, extract Bank#reduce(), add Sum and Expression." />
     <MESSAGE value="Add sum plus sum, add Expression#plus() and Expression#times()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sum plus sum, add Expression#plus() and Expression#times()." />
+    <MESSAGE value="Add final test[((1d+2d)*3+4d)*5=110f]." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add final test[((1d+2d)*3+4d)*5=110f]." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -814,17 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#105#106#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Money.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -860,9 +872,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="87" column="45" lean-forward="true" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+        <state relative-caret-position="577">
+          <caret line="99" column="57" lean-forward="true" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/BankTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
