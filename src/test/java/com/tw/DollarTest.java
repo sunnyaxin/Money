@@ -71,4 +71,10 @@ public class DollarTest {
     public void test_reduce_one_dollar_is_two_franc() throws Exception {
         assertEquals(Money.franc(2), bank.reduce(Money.dollar(1), "CHF"));
     }
+
+    @Test
+    public void test_reduce_one_dollar_plus_two_francs_equals_four_francs() throws Exception {
+        assertEquals(Money.franc(4), new Bank().reduce(new Sum(Money.dollar(1), Money.franc(2)), "CHF"));
+    }
+
 }
