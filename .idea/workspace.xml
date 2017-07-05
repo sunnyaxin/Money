@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0758230b-0443-45bb-a9fd-b72ba13842ea" name="Default" comment="Add rate, including dollar2dollar, franc2franc, dollar2franc.">
+    <list default="true" id="0758230b-0443-45bb-a9fd-b72ba13842ea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" afterPath="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tw/BankTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tw/BankTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="BankTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/BankTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="628">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,12 +77,24 @@
       <file leaf-file-name="Bank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+            <state relative-caret-position="391">
+              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding>
-                <element signature="e#129#130#0" expanded="true" />
-                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pair.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Pair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,16 +118,6 @@
                 <element signature="e#706#707#0" expanded="true" />
                 <element signature="e#754#755#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWorld.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/HelloWorld.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +156,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tw/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Expression.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Sum.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tw/BankTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tw/DollarTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Money.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tw/BankTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tw/Pair.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tw/Bank.java" />
       </list>
     </option>
@@ -700,27 +701,41 @@
       <option name="project" value="LOCAL" />
       <updated>1499262699462</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add set rate.">
+      <created>1499263938612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1499263938612</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add RMB currency, Add Pair to set different rates.">
+      <created>1499264702338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499264702338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_test - 2017.07.05 at 21h 59m 33s.xml">
-      <configuration name="All in test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_test - 2017.07.05 at 22h 09m 30s.xml">
       <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_test - 2017.07.05 at 22h 11m 20s.xml">
       <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_sum_plus_sum - 2017.07.05 at 22h 02m 13s.xml">
-      <configuration name="DollarTest.test_sum_plus_sum" configurationId="JUnit" />
+    <history-entry file="All_in_test - 2017.07.05 at 22h 15m 06s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_sum_plus_sum - 2017.07.05 at 22h 04m 23s.xml">
-      <configuration name="DollarTest.test_sum_plus_sum" configurationId="JUnit" />
+    <history-entry file="All_in_test - 2017.07.05 at 22h 21m 36s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DollarTest_test_sum_plus_sum - 2017.07.05 at 22h 05m 55s.xml">
-      <configuration name="DollarTest.test_sum_plus_sum" configurationId="JUnit" />
+    <history-entry file="All_in_test - 2017.07.05 at 22h 22m 31s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_test - 2017.07.05 at 22h 26m 01s.xml">
+      <configuration name="All in test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DollarTest_test_sum_plus_sum - 2017.07.05 at 22h 07m 08s.xml">
       <configuration name="DollarTest.test_sum_plus_sum" configurationId="JUnit" />
@@ -737,6 +752,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="23" width="1357" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -747,8 +763,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40973112" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22023048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -833,7 +849,9 @@
     <MESSAGE value="Add sum plus sum, add Expression#plus() and Expression#times()." />
     <MESSAGE value="Add final test[((1d+2d)*3+4d)*5=110f]." />
     <MESSAGE value="Add rate, including dollar2dollar, franc2franc, dollar2franc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add rate, including dollar2dollar, franc2franc, dollar2franc." />
+    <MESSAGE value="Add set rate." />
+    <MESSAGE value="Add RMB currency, Add Pair to set different rates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add RMB currency, Add Pair to set different rates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,16 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/BankTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -936,13 +944,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tw/BankTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tw/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        <state relative-caret-position="391">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>

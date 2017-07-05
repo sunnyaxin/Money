@@ -1,8 +1,10 @@
 package com.tw;
 
+import java.util.HashMap;
+
 class Bank {
 
-    private int rate;
+    private HashMap<Pair, Integer> rates = new HashMap<>();
 
     Bank() {
     }
@@ -15,12 +17,10 @@ class Bank {
         if (fromCurrency.equals(toCurrency)) {
             return 1; //这里要return1，不可以rate=1，否则重置rate，会产生错误
         }
-        return rate;
+        return rates.get(new Pair(fromCurrency, toCurrency));
     }
 
-    public void setRate(String from, String to, int rate) {
-        if(from.equals("USD") && to.equals("CHF")){
-            this.rate = rate;
-        }
+    void setRate(Pair pair, int rate) {
+        rates.put(pair, rate);
     }
 }

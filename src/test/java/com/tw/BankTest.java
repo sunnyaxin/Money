@@ -12,7 +12,7 @@ public class BankTest {
     @Before
     public void setUp() throws Exception {
         bank = new Bank();
-        bank.setRate("USD", "CHF", 2);
+        bank.setRate(new Pair("USD", "CHF"), 2);
     }
 
     @Test
@@ -32,7 +32,13 @@ public class BankTest {
 
     @Test
     public void test_set_rate_dollar_to_franc() throws Exception {
-        bank.setRate("USD", "CHF", 3);
+        bank.setRate(new Pair("USD", "CHF"), 3);
         assertEquals(3, bank.rate("USD", "CHF"));
+    }
+
+    @Test
+    public void test_set_rate_dollar_to_rmb() throws Exception {
+        bank.setRate(new Pair("USD", "CNY"), 7);
+        assertEquals(7, bank.rate("USD", "CNY"));
     }
 }
