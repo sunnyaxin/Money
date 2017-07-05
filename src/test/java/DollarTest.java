@@ -1,3 +1,4 @@
+import com.tw.Bank;
 import com.tw.Money;
 import org.junit.Test;
 
@@ -5,6 +6,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 public class DollarTest {
+    private final Bank bank = new Bank();
+
     @Test
     public void test_one_dollar_equals_one_dollar() throws Exception {
         assertEquals(Money.dollar(1), Money.dollar(1));
@@ -58,4 +61,8 @@ public class DollarTest {
         assertEquals("CHF", Money.franc(1).getCurrency());
     }
 
+    @Test
+    public void test_one_dollar_reduce_one_dollar() throws Exception {
+        assertEquals(Money.dollar(1), bank.reduce(Money.dollar(1), "USD"));
+    }
 }
