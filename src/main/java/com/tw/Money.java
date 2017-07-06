@@ -28,8 +28,8 @@ public class Money implements Expression {
 
     @Override
     public Money reduce(Currency to, Bank bank) {
-        int rate = bank.rate(getCurrency(), to);
-        return new Money(amount * rate, to);
+        double rate = bank.rate(getCurrency(), to);
+        return new Money((int) (amount * rate), to);
     }
 
     @Override
@@ -39,9 +39,9 @@ public class Money implements Expression {
 
     @Override
     public Expression plus(Expression expression) {
-        if(expression instanceof Money){
-            Money addend = (Money)expression;
-            if(getCurrency().equals(addend.getCurrency())){
+        if (expression instanceof Money) {
+            Money addend = (Money) expression;
+            if (getCurrency().equals(addend.getCurrency())) {
                 return new Money(this.amount + addend.amount, getCurrency());
             }
         }

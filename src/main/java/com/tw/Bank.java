@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 class Bank {
 
-    private HashMap<Pair, Integer> rates = new HashMap<>();
+    private HashMap<Pair, Double> rates = new HashMap<>();
 
     Bank() {
     }
@@ -13,7 +13,7 @@ class Bank {
         return source.reduce(toCurrency, this);
     }
 
-    int rate(Currency from, Currency to) {
+    double rate(Currency from, Currency to) {
         if (from.equals(to)) {
             return 1; //这里要return1，不可以rate=1，否则重置rate，会产生错误
         }
@@ -21,7 +21,7 @@ class Bank {
     }
 
 
-    void setRate(Pair pair, int rate) {
+    void setRate(Pair pair, double rate) {
         rates.put(pair, rate);
     }
 }

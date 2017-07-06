@@ -60,12 +60,12 @@ public class DollarTest {
 
     @Test
     public void test_dollar_currency_type() throws Exception {
-        assertEquals(Currency.USD, Money.dollar(1).getCurrency().name());
+        assertEquals(Currency.USD, Money.dollar(1).getCurrency());
     }
 
     @Test
     public void test_franc_currency_type() throws Exception {
-        assertEquals(Currency.CHF, Money.franc(1).getCurrency().name());
+        assertEquals(Currency.CHF, Money.franc(1).getCurrency());
     }
 
     @Test
