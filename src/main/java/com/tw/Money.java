@@ -2,42 +2,48 @@ package com.tw;
 
 public class Money implements Expression {
     private int amount;
-    private String currency;
 
-    private Money(int amount, String currency) {
+    private Currency currency;
+
+    private Money(int amount, Currency currency) {
         this.amount = amount;
-        this.currency = currency;
+        setCurrency(currency);
     }
 
     static Money dollar(int amount) {
-        return new Money(amount, "USD");
+        return new Money(amount, Currency.USD);
     }
 
     static Money franc(int amount) {
-        return new Money(amount, "CHF");
+        return new Money(amount, Currency.CHF);
     }
 
-    String getCurrency() {
+    private void setCurrency(Currency currency) {
+        this.currency = currency;
+    }
+
+    Currency getCurrency() {
         return currency;
     }
 
     @Override
     public Money reduce(String toCurrency, Bank bank) {
-        int rate = bank.rate(Currency.valueOf(getCurrency()), Currency.valueOf(toCurrency));
-        return new Money(amount * rate, toCurrency);
+        Currency to = Currency.valueOf(toCurrency);
+        int rate = bank.rate(getCurrency(), to);
+        return new Money(amount * rate, to);
     }
 
     @Override
     public Money times(int multiplier) {
-        return new Money(amount * multiplier, this.getCurrency());
+        return new Money(amount * multiplier, getCurrency());
     }
 
     @Override
     public Expression plus(Expression expression) {
         if(expression instanceof Money){
             Money addend = (Money)expression;
-            if(this.getCurrency().equals(addend.getCurrency())){
-                return new Money(this.amount + addend.amount, this.getCurrency());
+            if(getCurrency().equals(addend.getCurrency())){
+                return new Money(this.amount + addend.amount, getCurrency());
             }
         }
         return new Sum(this, expression);
@@ -50,11 +56,13 @@ public class Money implements Expression {
 
         Money money = (Money) o;
 
-        return amount == money.amount && (currency != null ? currency.equals(money.currency) : money.currency == null);
+        return amount == money.amount && currency == money.currency;
     }
 
     @Override
     public int hashCode() {
-        return amount;
+        int result = amount;
+        result = 31 * result + currency.hashCode();
+        return result;
     }
 }
