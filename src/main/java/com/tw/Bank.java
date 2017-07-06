@@ -9,7 +9,7 @@ class Bank {
     Bank() {
     }
 
-    Money reduce(Expression source, String toCurrency) {
+    Money reduce(Expression source, Currency toCurrency) {
         return source.reduce(toCurrency, this);
     }
 

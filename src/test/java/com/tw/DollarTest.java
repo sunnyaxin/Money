@@ -60,50 +60,50 @@ public class DollarTest {
 
     @Test
     public void test_dollar_currency_type() throws Exception {
-        assertEquals("USD", Money.dollar(1).getCurrency().name());
+        assertEquals(Currency.USD, Money.dollar(1).getCurrency().name());
     }
 
     @Test
     public void test_franc_currency_type() throws Exception {
-        assertEquals("CHF", Money.franc(1).getCurrency().name());
+        assertEquals(Currency.CHF, Money.franc(1).getCurrency().name());
     }
 
     @Test
     public void test_reduce_same_currency() throws Exception {
-        assertEquals(Money.dollar(1), bank.reduce(Money.dollar(1), "USD"));
-        assertEquals(Money.franc(1), bank.reduce(Money.franc(1), "CHF"));
+        assertEquals(Money.dollar(1), bank.reduce(Money.dollar(1), Currency.USD));
+        assertEquals(Money.franc(1), bank.reduce(Money.franc(1), Currency.CHF));
     }
 
     @Test
     public void test_reduce_one_dollar_is_two_franc() throws Exception {
-        assertEquals(Money.franc(2), bank.reduce(Money.dollar(1), "CHF"));
+        assertEquals(Money.franc(2), bank.reduce(Money.dollar(1), Currency.CHF));
     }
 
     @Test
     public void test_reduce_one_dollar_plus_two_francs_equals_four_francs() throws Exception {
-        assertEquals(Money.franc(4), bank.reduce(new Sum(Money.dollar(1), Money.franc(2)), "CHF"));
+        assertEquals(Money.franc(4), bank.reduce(new Sum(Money.dollar(1), Money.franc(2)), Currency.CHF));
     }
 
     @Test
     public void test_reduce_one_dollar_plus_two_francs_plus_three_francs() throws Exception {
-        assertEquals(Money.franc(7), bank.reduce(new Sum(Money.dollar(1), Money.franc(2)), "CHF").plus(Money.franc(3)));
+        assertEquals(Money.franc(7), bank.reduce(new Sum(Money.dollar(1), Money.franc(2)), Currency.CHF).plus(Money.franc(3)));
     }
 
     @Test
     public void test_sum_plus_sum() throws Exception {
         Sum sum = new Sum(Money.dollar(1), Money.franc(2));
-        assertEquals(Money.franc(8), bank.reduce(sum.plus(sum), "CHF"));
+        assertEquals(Money.franc(8), bank.reduce(sum.plus(sum), Currency.CHF));
     }
 
     @Test
     public void test_sum_times_three() throws Exception {
         Sum sum = new Sum(Money.dollar(1), Money.franc(2));
-        assertEquals(Money.franc(12), bank.reduce(sum.times(3), "CHF"));
+        assertEquals(Money.franc(12), bank.reduce(sum.times(3), Currency.CHF));
     }
 
     @Test
     public void final_test() throws Exception {
         Expression source = Money.dollar(1).plus(Money.dollar(2)).times(3).plus(Money.franc(4)).times(5);
-        assertEquals(Money.franc(110), bank.reduce(source, "CHF"));
+        assertEquals(Money.franc(110), bank.reduce(source, Currency.CHF));
     }
 }

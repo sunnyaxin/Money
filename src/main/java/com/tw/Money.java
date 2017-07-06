@@ -27,8 +27,7 @@ public class Money implements Expression {
     }
 
     @Override
-    public Money reduce(String toCurrency, Bank bank) {
-        Currency to = Currency.valueOf(toCurrency);
+    public Money reduce(Currency to, Bank bank) {
         int rate = bank.rate(getCurrency(), to);
         return new Money(amount * rate, to);
     }
