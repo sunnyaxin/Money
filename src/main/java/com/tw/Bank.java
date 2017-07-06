@@ -13,12 +13,13 @@ class Bank {
         return source.reduce(toCurrency, this);
     }
 
-    int rate(String fromCurrency, String toCurrency) {
-        if (fromCurrency.equals(toCurrency)) {
+    int rate(Currency from, Currency to) {
+        if (from.equals(to)) {
             return 1; //这里要return1，不可以rate=1，否则重置rate，会产生错误
         }
-        return rates.get(new Pair(fromCurrency, toCurrency));
+        return rates.get(new Pair(from, to));
     }
+
 
     void setRate(Pair pair, int rate) {
         rates.put(pair, rate);

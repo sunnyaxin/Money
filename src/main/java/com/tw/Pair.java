@@ -1,10 +1,10 @@
 package com.tw;
 
 public class Pair {
-    private final String from;
-    private final String to;
+    private final Currency from;
+    private final Currency to;
 
-    Pair(String from, String to) {
+    Pair(Currency from, Currency to) {
         this.from = from;
         this.to = to;
     }
@@ -16,14 +16,13 @@ public class Pair {
 
         Pair pair = (Pair) o;
 
-        if (from != null ? !from.equals(pair.from) : pair.from != null) return false;
-        return to != null ? to.equals(pair.to) : pair.to == null;
+        return from == pair.from && to == pair.to;
     }
 
     @Override
     public int hashCode() {
-        int result = from != null ? from.hashCode() : 0;
-        result = 31 * result + (to != null ? to.hashCode() : 0);
+        int result = from.hashCode();
+        result = 31 * result + to.hashCode();
         return result;
     }
 }

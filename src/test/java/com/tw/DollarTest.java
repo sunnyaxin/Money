@@ -12,7 +12,7 @@ public class DollarTest {
     @Before
     public void setUp() throws Exception {
         bank = new Bank();
-        bank.setRate(new Pair("USD", "CHF"), 2);
+        bank.setRate(new Pair(Currency.USD, Currency.CHF), 2);
     }
 
     @Test
